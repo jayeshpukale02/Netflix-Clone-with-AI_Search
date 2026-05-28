@@ -1,0 +1,76 @@
+.movies-page {
+  background: #141414;
+  min-height: 100vh;
+  color: white;
+}
+
+.movies-hero {
+  width: 100%;
+  min-height: 42vh;
+  background: linear-gradient(135deg, #1a0a0a, #3d0000, #1a0505);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 6% 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.movies-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top left, rgba(229, 9, 20, 0.2) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.movies-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(transparent, #141414);
+}
+
+.movies-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+}
+
+.movies-badge {
+  display: inline-block;
+  background: #e50914;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.movies-hero-content h1 {
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  max-width: 600px;
+  background: linear-gradient(90deg, #fff, #ffcccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.movies-hero-content p {
+  font-size: 16px;
+  color: #b3b3b3;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.movies-content {
+  padding: 0 6% 40px;
+}

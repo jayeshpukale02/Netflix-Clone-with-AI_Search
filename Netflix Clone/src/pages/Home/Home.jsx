@@ -31,14 +31,20 @@ const Home = () => {
               More Info
             </button>
           </div>
-          <Titlecards />
+          <Titlecards title={"Now Playing"} category={"now_playing"} mediaType="movie" />
         </div>
       </div>
       <div className="more-cards">
-        <Titlecards title={"Blockbuster Movies"} category={"top_rated"} />
-        <Titlecards title={"Only on Netflix"} category={"popular"} />
-        <Titlecards title={"Upcoming"} category={"upcoming"} />
-        <Titlecards title={"Top Pics for you"} category={"now_playing"} />
+        {/* Movie Rows */}
+        <Titlecards title={"Blockbuster Movies"} category={"top_rated"} mediaType="movie" />
+        <Titlecards title={"Only on Netflix"} category={"popular"} mediaType="movie" />
+        <Titlecards title={"Upcoming Movies"} category={"upcoming"} mediaType="movie" />
+
+        {/* TV Show Rows */}
+        <Titlecards title={"Trending TV Shows"} category={"popular"} mediaType="tv" />
+        <Titlecards title={"Top Rated Series"} category={"top_rated"} mediaType="tv" />
+        <Titlecards title={"Airing Today"} category={"airing_today"} mediaType="tv" />
+        <Titlecards title={"On The Air"} category={"on_the_air"} mediaType="tv" />
       </div>
       <Footer />
     </div>
